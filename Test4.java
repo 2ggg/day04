@@ -23,5 +23,6 @@ public class Test4 {
 			result="30대 이상입니다.";
 		}
 		System.out.println("나이는 "+age+"세 입니다.\n"+result);
+		
 	}
 }

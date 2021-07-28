@@ -15,6 +15,32 @@ public class Test3 {
 	 */
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
+		int kor, eng, math;
+		System.out.print("국어 성적: ");
+		kor = scanner.nextInt();
+		System.out.print("영어 성적: ");
+		eng = scanner.nextInt();
+		System.out.print("수학 성적: ");
+		math = scanner.nextInt();
 		
+		int sum = kor+eng+math;
+		double avg = sum/3;
+		String result = "";
+		
+		if(sum<=300) {
+			if(80<=avg) {
+				result = "참 잘했어요";
+			}else if((60<=avg)&&(avg<80)) {
+				result = "잘했어요";
+			}else if((30<=avg)&&(avg<60)) {
+				result = "아쉽네요";
+			}else{
+				result = "좀 더 분발하세요";}
+		}else {
+			System.out.println("다시 입력해주세요");
+		}
+		System.out.println("합계: "+sum);
+		System.out.println("평균: "+avg);
+		System.out.println(result);
 	}
 }
